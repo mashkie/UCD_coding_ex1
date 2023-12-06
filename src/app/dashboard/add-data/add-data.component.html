@@ -10,9 +10,9 @@
       <mat-label>Geburtsdatum</mat-label>
       <input formControlName="birthDate" matInput [matDatepicker]="picker" />
       <mat-hint>TT/MM/JJJJ</mat-hint>
-      <mat-error *ngIf="birthDate.invalid">{{
-        getErrorMessage("birthDate")
-      }}</mat-error>
+      <mat-error *ngIf="birthDate.invalid"
+        >{{ getErrorMessage("birthDate") }}
+      </mat-error>
       <mat-datepicker-toggle
         matIconSuffix
         [for]="picker"
@@ -31,9 +31,9 @@
           <hr />
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="kindergardenId.invalid">{{
-        getErrorMessage("kindergardenId")
-      }}</mat-error>
+      <mat-error *ngIf="kindergardenId.invalid"
+        >{{ getErrorMessage("kindergardenId") }}
+      </mat-error>
     </mat-form-field>
     <button
       class="add-form__button"

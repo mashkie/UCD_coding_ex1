@@ -1,4 +1,8 @@
 .dashboard {
+  &__app-button {
+    display: flex;
+    justify-content: center;
+  }
   &__app-add-data {
     display: flex;
     justify-content: center;

@@ -17,6 +17,12 @@
       "kindergardenId": 3,
       "birthDate": "2020-01-05T23:00:00.000Z",
       "id": 3
+    },
+    {
+      "name": "This is my child",
+      "kindergardenId": 5,
+      "birthDate": "2020-11-10T23:00:00.000Z",
+      "id": 4
     }
   ],
   "kindergardens": [
