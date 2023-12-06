@@ -4,10 +4,14 @@
     <mat-form-field class="add-form__input-name">
       <mat-label>Name</mat-label>
       <input matInput placeholder="Name" formControlName="name" />
+      <mat-error *ngIf="name.invalid">{{ getErrorMessage("name") }}</mat-error>
     </mat-form-field>
     <mat-form-field class="add-form__input-birthdate">
       <mat-label>Geburtsdatum</mat-label>
       <input formControlName="birthDate" matInput [matDatepicker]="picker" />
+      <mat-error *ngIf="birthDate.invalid">{{
+        getErrorMessage("birthDate")
+      }}</mat-error>
       <mat-datepicker-toggle
         matIconSuffix
         [for]="picker"
@@ -26,6 +30,9 @@
           <hr />
         </mat-option>
       </mat-select>
+      <mat-error *ngIf="kindergardenId.invalid">{{
+        getErrorMessage("kindergardenId")
+      }}</mat-error>
     </mat-form-field>
     <button
       class="add-form__button"
