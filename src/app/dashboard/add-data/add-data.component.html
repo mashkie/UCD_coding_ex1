@@ -1,0 +1,40 @@
+<form [formGroup]="addChildForm" (ngSubmit)="onSubmit()">
+  <div class="add-form">
+    <h2 class="add-form__title">Ihr Kind anmelden!</h2>
+    <mat-form-field class="add-form__input-name">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="add-form__input-birthdate">
+      <mat-label>Geburtsdatum</mat-label>
+      <input formControlName="birthDate" matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Bitte Auswählen</mat-label>
+      <mat-select formControlName="kindergardenId">
+        <mat-option
+          *ngFor="let kindergarden of storeService.kindergardens"
+          [value]="kindergarden.id"
+        >
+          {{ kindergarden.name }}, {{ kindergarden.address }}
+          <hr />
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button
+      class="add-form__button"
+      [disabled]="!addChildForm.valid"
+      type="submit"
+      mat-raised-button
+      color="primary"
+    >
+      Erfassen
+    </button>
+  </div>
+</form>

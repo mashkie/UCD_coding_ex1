@@ -1,0 +1,18 @@
+<div class="dashboard">
+  <app-data
+    class="dashboard__app-data"
+    [currentPage]="currentPage"
+    (selectPageEvent)="receiveMessage($event)"
+  ></app-data>
+  <br />
+  <app-button
+    class="dashboard__app-button"
+    [showAddData]="showAddData"
+    (toggleButtonClickEvent)="toggleButtonClicked($event)"
+  ></app-button>
+  <app-add-data
+    class="dashboard__app-add-data"
+    *ngIf="showAddData"
+    [currentPage]="currentPage"
+  ></app-add-data>
+</div>
