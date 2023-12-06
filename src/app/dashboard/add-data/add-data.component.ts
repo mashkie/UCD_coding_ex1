@@ -27,6 +27,10 @@ export class AddDataComponent implements OnInit {
   @Input() currentPage!: number;
 
   ngOnInit(): void {
+    this.buildChildForm();
+  }
+
+  buildChildForm() {
     this.addChildForm = this.fb.group({
       name: [
         '',
@@ -59,7 +63,17 @@ export class AddDataComponent implements OnInit {
         this.addChildForm.value,
         this.currentPage,
       );
+      this.resetForm();
     }
+  }
+
+  resetForm() {
+    this.addChildForm.reset();
+    this.addChildForm.markAsPristine();
+    this.addChildForm.markAsUntouched();
+    this.name.setErrors(null);
+    this.kindergardenId.setErrors(null);
+    this.birthDate.setErrors(null);
   }
 
   validateAge(): ValidatorFn {
