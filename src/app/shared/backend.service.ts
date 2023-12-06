@@ -5,6 +5,7 @@ import { StoreService } from './store.service';
 import { Child, ChildResponse } from './interfaces/Child';
 import { CHILDREN_PER_PAGE } from './constants';
 import { tap } from 'rxjs/operators';
+import { SnackbarService } from './snackbar.service';
 
 @Injectable({
   providedIn: 'root',
@@ -13,6 +14,7 @@ export class BackendService {
   constructor(
     private http: HttpClient,
     private storeService: StoreService,
+    private snackbarService: SnackbarService,
   ) {}
 
   public getKindergardens() {
@@ -45,6 +47,7 @@ export class BackendService {
       .pipe(tap(() => (this.storeService.isLoading = true)))
       .subscribe((_) => {
         this.storeService.isLoading = false;
+        this.snackbarService.openSnackBar('Kind wurde erfolgreich hinzugefügt');
         this.getChildren(page);
       });
   }

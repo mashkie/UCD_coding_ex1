@@ -143,6 +143,18 @@
       "kindergardenId": 5,
       "birthDate": "2020-06-07T22:00:00.000Z",
       "id": "80H4sTE"
+    },
+    {
+      "name": "this is my child",
+      "kindergardenId": 2,
+      "birthDate": "2020-06-01T22:00:00.000Z",
+      "id": "114tK-k"
+    },
+    {
+      "name": "asdf",
+      "kindergardenId": 2,
+      "birthDate": "2020-12-12T23:00:00.000Z",
+      "id": "8nLs3w6"
     }
   ],
   "kindergardens": [
