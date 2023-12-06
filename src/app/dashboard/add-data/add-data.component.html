@@ -9,6 +9,7 @@
     <mat-form-field class="add-form__input-birthdate">
       <mat-label>Geburtsdatum</mat-label>
       <input formControlName="birthDate" matInput [matDatepicker]="picker" />
+      <mat-hint>TT/MM/JJJJ</mat-hint>
       <mat-error *ngIf="birthDate.invalid">{{
         getErrorMessage("birthDate")
       }}</mat-error>

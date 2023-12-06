@@ -1,178 +1,22 @@
 {
   "childs": [
     {
-      "id": "iL775j",
-      "name": "Nicole Fitsch 1",
-      "birthDate": "2021-07-04",
-      "kindergardenId": 1
-    },
-    {
-      "id": "ij700m",
-      "name": "Melanie Hollunder 2",
-      "birthDate": "2020-07-04",
-      "kindergardenId": 3
-    },
-    {
-      "id": "iL77oo",
-      "name": "Viktor Sachs 3",
-      "birthDate": "2022-06-04",
-      "kindergardenId": 4
-    },
-    {
-      "id": "iL790m",
-      "name": "Emily Nilson 4",
-      "birthDate": "2019-01-04",
-      "kindergardenId": 2
-    },
-    {
-      "id": "iL790c",
-      "name": "Tom Reiner 5",
-      "birthDate": "2019-01-04",
-      "kindergardenId": 2
-    },
-    {
-      "id": "iL790d",
-      "name": "Michael Mittner 6",
-      "birthDate": "2019-01-04",
-      "kindergardenId": 2
-    },
-    {
-      "id": "iL790f",
-      "name": "Nikolaus Polarius 7",
-      "birthDate": "2019-01-04",
-      "kindergardenId": 2
-    },
-    {
-      "id": "9py_fwi",
-      "name": "Paulus Fensterl 8",
-      "kindergardenId": 2,
-      "birthDate": "2023-09-28"
-    },
-    {
-      "id": "hOHEFCv",
-      "name": "Heidi aus den Bergen 9",
-      "kindergardenId": 2,
-      "birthDate": "2023-10-05"
-    },
-    {
-      "id": "cu0_2Ad",
-      "name": "Traude Widmann 10",
-      "kindergardenId": 2,
-      "birthDate": "2023-10-05"
-    },
-    {
-      "id": "ip57WMS",
-      "name": "Heiner Kühlschrank 11",
-      "kindergardenId": 2,
-      "birthDate": "2023-10-26"
-    },
-    {
-      "id": "JmbNaBH",
-      "name": "Nicole Witz 12",
-      "kindergardenId": 3,
-      "birthDate": "2023-10-13"
-    },
-    {
-      "name": "Bastian Witsch 13",
-      "kindergardenId": 3,
-      "birthDate": "2023-10-13",
-      "id": "hlQAqAD"
-    },
-    {
-      "name": "test",
-      "kindergardenId": 2,
-      "birthDate": "2023-11-28T23:00:00.000Z",
-      "id": "NR5k4LZ"
-    },
-    {
-      "name": "My first child",
-      "kindergardenId": 1,
-      "birthDate": "2020-02-03T23:00:00.000Z",
-      "id": "bSpsa6m"
-    },
-    {
-      "name": "sdfg",
-      "kindergardenId": 1,
-      "birthDate": "2017-07-04T22:00:00.000Z",
-      "id": "30NhFl5"
-    },
-    {
-      "name": "asdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-06-01T22:00:00.000Z",
-      "id": "uvbHCTe"
-    },
-    {
-      "name": "asdfasdf",
+      "name": "this is my child 1",
       "kindergardenId": 1,
       "birthDate": "2020-01-05T23:00:00.000Z",
-      "id": "w69Q66c"
+      "id": 1
     },
     {
-      "name": "aaa",
-      "kindergardenId": 1,
+      "name": "this is my child 2",
+      "kindergardenId": 2,
       "birthDate": "2020-01-05T23:00:00.000Z",
-      "id": "yvz0Y3q"
+      "id": 2
     },
     {
-      "name": "asdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-11-12T23:00:00.000Z",
-      "id": "0r7QEBY"
-    },
-    {
-      "name": "asdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-12-19T23:00:00.000Z",
-      "id": "eto3-f4"
-    },
-    {
-      "name": "asdfsaf",
-      "kindergardenId": 2,
-      "birthDate": "2017-12-06T23:00:00.000Z",
-      "id": "YFiaetk"
-    },
-    {
-      "name": "asdfasdf",
-      "kindergardenId": 2,
-      "birthDate": "2020-02-02T23:00:00.000Z",
-      "id": "E-ASlj9"
-    },
-    {
-      "name": "aaaaaaaa",
-      "kindergardenId": 5,
-      "birthDate": "2020-06-07T22:00:00.000Z",
-      "id": "80H4sTE"
-    },
-    {
-      "name": "this is my child",
-      "kindergardenId": 2,
-      "birthDate": "2020-06-01T22:00:00.000Z",
-      "id": "114tK-k"
-    },
-    {
-      "name": "asdf",
-      "kindergardenId": 2,
-      "birthDate": "2020-12-12T23:00:00.000Z",
-      "id": "8nLs3w6"
-    },
-    {
-      "name": "asdfasdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-02-04T23:00:00.000Z",
-      "id": "o4te4o5"
-    },
-    {
-      "name": "asdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-02-04T23:00:00.000Z",
-      "id": "08GSSu7"
-    },
-    {
-      "name": "asdf",
-      "kindergardenId": 1,
-      "birthDate": "2020-02-04T23:00:00.000Z",
-      "id": "pjNL5ay"
+      "name": "this is my child 3",
+      "kindergardenId": 3,
+      "birthDate": "2020-01-05T23:00:00.000Z",
+      "id": 3
     }
   ],
   "kindergardens": [
