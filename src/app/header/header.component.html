@@ -1,6 +1,9 @@
 <div class="flex">
-    <h1>{{ title }}</h1>
-    <img width="500" src={{imagePath}}>&nbsp;&nbsp;
-    <a [routerLink]="['/dashboard']">Dashboard</a>&nbsp;&nbsp;
-    <a [routerLink]="['/about']">About</a>
+  <h1>{{ title }}</h1>
+  <img width="500" src="{{ imagePath }}" />&nbsp;&nbsp;
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item [routerLink]="['/dashboard']">Dashboard</a>&nbsp;&nbsp;
+    <a mat-menu-item [routerLink]="['/about']">About</a>
+  </mat-menu>
 </div>
