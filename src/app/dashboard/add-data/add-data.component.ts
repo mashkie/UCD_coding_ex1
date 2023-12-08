@@ -74,6 +74,7 @@ export class AddDataComponent implements OnInit {
     this.name.setErrors(null);
     this.kindergardenId.setErrors(null);
     this.birthDate.setErrors(null);
+    this.addChildForm.setErrors({ invalid: true });
   }
 
   validateAge(): ValidatorFn {
@@ -101,10 +102,13 @@ export class AddDataComponent implements OnInit {
       control.hasError(type) ? message : '';
 
     this.errorMessages[controlName] =
-      errorCheck('required', 'You must enter a value') ||
-      errorCheck('minlength', 'Name must be at least 3 characters long') ||
-      errorCheck('maxlength', 'Name must be at most 20 characters long') ||
-      errorCheck('birthDate', 'Child must be between 3 and 6 years old');
+      errorCheck('required', 'Bitte gib einen Wert ein') ||
+      errorCheck('minlength', 'Name muss mindestens 3 characters lang sein') ||
+      errorCheck(
+        'maxlength',
+        'Name darf nicht mehr als 20 characters lang sein',
+      ) ||
+      errorCheck('birthDate', 'Das Kind muss zwischen 3 und 6 Jahre alt sein');
 
     return this.errorMessages[controlName];
   }
